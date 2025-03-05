@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vegetable Market</title>
+    <link rel="stylesheet" href="../CSS/veggies.css?v=<?php echo time(); ?>">
+    
+</head>
+
+<body>
+ 
+ 
+    <form method="POST" action="../PHP/update.php">   
+   
+<div class="container">
+    <h1> Update Vegetable Order</h1>
+        <div>
+            <label for="order_id">Order ID:</label>
+            <input type="text" id="order_id" name="order_id" autocomplete="off" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" autocomplete="off" required>
+            <label for="vegetable">Vegetables:</label>
+
+        <select class="choices" id="choices" name="choices">
+            <option value="potato">Potato-₱110</option>
+            <option value="carrot" >Carrot-₱131.65</option>
+            <option value="tomato">Tomato-₱45</option>
+            <option value="cabbage">Cabbage-₱146.270</option>
+            <option value="celery">Celery-₱389.54</option>
+        </select>
+        
+            <div class="input-group">
+            <label>Size:</label>
+            <input type="radio" id="small" name="size" value="1/4kg" required>
+            <label for="small">1/4kg</label>
+            <input type="radio" id="medium" name="size" value="1/2kg">
+            <label for="medium">1/2kg</label>
+            <input type="radio" id="large" name="size" value="1kg">
+            <label for="large">1kg</label>
+        </div>
+
+        <div class="input-group">
+            <label for="extras">Extras:</label>
+            <input type="checkbox" id="plastic" name="extras[]" value="plastic" checked>
+            <label for="plastic">Plastic Bag: +₱5.75</label>
+            <input type="checkbox" id="paper" name="extras[]" value="paper">
+            <label for="paper">Paper Bag: +₱10.50</label>
+        </div>
+
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="2"></textarea>
+
+        <button type="submit">Place Order</button>
+</div>
+
+
+
+</form>
+<br/>
+<form action="menu.html">
+     <button type="submit">Back to Main Menu</button>
+</form>
+
+</body>
+<div id="footer">
+    <p>Thank you for visiting Online Vegetable Market</p>
+  </div>
+
+</html>

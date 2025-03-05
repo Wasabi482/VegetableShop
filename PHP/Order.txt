@@ -1,0 +1,10 @@
+Order Summary
+-----------------
+Name:Sushi
+Product Type:potato(₱110.00)
+Size:1/2kg
+Extras: plastic(₱5.75)
+Total Price: ₱60.75
+Special Instructions: Testing
+
+Thank you for your order!
